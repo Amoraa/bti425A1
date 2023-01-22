@@ -5,7 +5,7 @@
 * (including web sites) or distributed to other students.
 * 
 * Name: ____Tatiana Kashcheeva__________________ Student ID: _____148366206_________ Date: __22.01.2023______________
-* Cyclic Link: _______________________________________________________________
+* Cyclic Link: __________________https://fine-gray-clam-sari.cyclic.app/_____________________________________________
 *
 ********************************************************************************/ 
 // Setup
@@ -46,7 +46,7 @@ app.post('/api/movies', (req, res) => {
     
 });
 
-//Show all movies
+//Show all movies matching query
 app.get('/api/movies', (req, res) => {
     db.getAllMovies(req.query.page,req.query.perPage,req.query.title)
     .then((data)=>
